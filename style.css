@@ -201,6 +201,31 @@ body {
 }
 
 
+/* Artists*/
+
+.popularArtists {
+    display: flex;
+}
+
+.Artistname {
+    position: relative;
+    left: 3rem;
+}
+
+.artistDetails {
+    width: fit-content;
+    margin: auto;
+    display: inline;
+}
+
+.artistDetails>img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+
 /* Footer */
 
 .foot>audio {

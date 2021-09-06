@@ -95,8 +95,8 @@ body {
 #comingSoon>img {
     /* width: 529px; */
     /* height: 275px; */
-    width: 85%;
     /*More responsive*/
+    width: 85%;
     height: 30%;
     box-shadow: turquoise 5 5;
     margin: auto;
@@ -315,5 +315,15 @@ body {
     #searchKey {
         display: none;
     }
-    .nav {}
+    .latestReleases {
+        grid-template-columns: 2.5fr;
+        grid-template-rows: 4.5rem 4.5rem 4.5rem 4.5rem;
+    }
+    .popularArtists {
+        flex-direction: column;
+    }
+    .genrebanner {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
 }

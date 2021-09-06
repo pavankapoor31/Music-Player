@@ -253,19 +253,32 @@ body {
     height: 10rem;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 #banner1 {
-    background-image: url(/images/genre1.jpg);
+    background-image: url(images/genre1.jpg);
 }
 
 #banner2 {
-    background-image: url(/images/genre1.jpg);
+    background-image: url(images/genre1.jpg);
 }
 
 #banner3 {
-    background-image: url(/images/genre1.jpg);
+    background-image: url(images/genre1.jpg);
     background-size: cover;
+}
+
+
+/* Hover effect on banner */
+
+.banner:hover {
+    content: "";
+    height: 110%;
+    width: 110%;
+    z-index: 3;
+    transition: 100ms;
+    font-size: 1.2rem;
 }
 
 .centerText {
@@ -277,6 +290,6 @@ body {
 }
 
 .middle {
-    line-height: 1rem;
+    line-height: 8rem;
     text-align: center;
 }

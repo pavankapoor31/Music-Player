@@ -1,0 +1,158 @@
+
+:root{
+    --blue-bg-colour: rgb(12,16,39);
+    --lightBlue:rgb(19, 26, 66);
+    --white-Font: rgb(255, 255, 255);
+    --paleWhite-Font: rgb(180, 199, 127);
+        /* --lightBlue:rgb(18,25,63); */
+}
+/* css reset */
+*{
+    -col:
+    margin: 0; padding: 0;
+    color: var(--white-Font);
+} 
+/* body background */
+body{
+    background-color:var(--blue-bg-colour);
+    margin-right: 15px;
+    scroll-behavior: smooth;
+}
+
+/* Header */ 
+.nav{
+    position: sticky;
+}
+.navbar{
+    
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content:baseline ;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.navbar li{
+    display: inline;
+    margin:10px;
+    margin-left: 25px;
+    font-size: 1.2rem;
+}
+#favorites{
+ padding: 2px;   
+}
+.right-nav{
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content:baseline ;
+    
+}
+#searchKey
+{
+    border: 0;
+    border-radius: 10px;
+    height: 1.3rem;
+    width: 14rem;
+    background-color: var(--lightBlue);
+    padding: 4px;
+}
+
+.mainLogo>img{
+    border-radius: 0;
+    width: 123px;
+    height: 93px;
+    margin-top: -31px;
+    filter: invert();
+
+}
+#notificationIcon>img
+{
+    width: 30px;
+    height: 35px;
+    filter: invert();
+    margin-top: -5px;
+}
+#sideImage>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -5px;   
+}
+
+/* New Music banner */
+#comingSoon{
+    width: 60vw;
+    display: flex;
+}
+#comingSoon>img{
+    width: 529px;
+    height: 275px;
+    box-shadow: turquoise 5 5;
+   margin: auto;
+   justify-content: center  ;
+    box-shadow: turquoise 0px 0px 1px 1px;
+} 
+.container{
+    display: inline-block;
+}
+
+
+/* QUEUE Styling */
+
+#queueList{
+float: right;
+margin:auto;
+width: 35vw;
+}
+#queueList>h2{
+text-align: left;
+margin:auto;
+display: inline;
+}
+#queueList>h4{
+    display: inline;
+    position: absolute;
+    margin-top: 4px;
+    right: 4rem;
+    color: rgb(72, 228, 212);
+    font-size: 0.8rem;
+}
+.playListCard{
+    margin: 0.9rem;
+    /* display: flex; */
+    align-items:flex-start;
+    padding: 0.5rem;
+}
+.playListCard>img{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.3rem;
+    box-shadow:  white 2px 2px 2px 2px;
+}
+.singerName{
+    color: var(--Palewhite-Font);
+    font-size: 0.7rem;
+    text-align: left ;
+    position: relative;
+    left: 5rem;
+    top: -1rem;
+   
+}
+.songName{
+   margin-left: 1rem;
+   position: relative;
+   top: -1rem;
+}
+
+/* Latest releases section */ 
+.latestReleases{
+    display: grid;
+    grid-template-columns: repeat(3fr 3fr);
+}
+.songBox{
+    border: 2px solid red;
+    grid-area: auto;
+
+}

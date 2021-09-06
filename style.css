@@ -15,6 +15,7 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     margin-bottom: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -201,44 +202,7 @@ body {
 }
 
 
-/* Artists*/
-
-.popularArtists {
-    display: flex;
-}
-
-.Artistname {
-    position: relative;
-    left: 3rem;
-}
-
-.artistDetails {
-    width: fit-content;
-    margin: auto;
-    display: inline;
-}
-
-.artistDetails>img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin-left: 1rem;
-}
-
-
-/* Footer */
-
-.foot>audio {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-left: -0.5rem;
-    margin-bottom: 0;
-    background-color: #F1F3F4;
-}
-
-
-/*Genre Bamnners*/
+/*Genre Banners*/
 
 .genrebanner {
     display: grid;
@@ -281,6 +245,46 @@ body {
     font-size: 1.2rem;
 }
 
+
+/* Artists*/
+
+.popularArtists {
+    display: flex;
+}
+
+.Artistname {
+    position: relative;
+    left: 3rem;
+}
+
+.artistDetails {
+    width: fit-content;
+    margin: auto;
+    display: inline;
+}
+
+.artistDetails>img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+
+/* Footer */
+
+.foot>audio {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-left: -0.5rem;
+    margin-bottom: 0;
+    background-color: #F1F3F4;
+}
+
+
+/*Utility classes*/
+
 .centerText {
     text-align: center;
 }
@@ -292,4 +296,24 @@ body {
 .middle {
     line-height: 8rem;
     text-align: center;
+}
+
+
+/*Responsive design */
+
+@media only screen and (max-width:1100px) {
+    #queueList {
+        display: block;
+        width: fit-content;
+        float: left;
+        margin: auto;
+        z-index: -1;
+    }
+    #favorites {
+        display: none;
+    }
+    #searchKey {
+        display: none;
+    }
+    .nav {}
 }

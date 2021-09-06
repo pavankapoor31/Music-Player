@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,105 +9,140 @@
 
     <title>Music player</title>
 </head>
+
 <body>
     <div class="nav">
-       <ul class="navbar">
-           <li class="mainLogo"><img src="/images/logo.png" alt="MagicMusi"></li>
-           
-           <li id="favorites">Favorites</li>
-           <div class="right-nav">
-           <li> <input type="text" id="searchKey" placeholder="Search"></li>
-           <li id="notificationIcon">
-               <img src="/images/notificationBell.png" alt=""> 
-            </li>
-           <li id="sideImage">
-               <img src="/images/suits.png" alt="">
-            </li>
-           </div>
-       </ul>
+        <ul class="navbar">
+            <li class="mainLogo"><img src="/images/MusicX-logos_white.png" alt="logo"></li>
+            <li id="favorites">Favorites</li>
+            <div class="right-nav">
+                <li> <input type="text" id="searchKey" placeholder="Search"></li>
+                <li id="notificationIcon">
+                    <img src="/images/notificationBell.png" alt="">
+                </li>
+                <li id="sideImage">
+                    <img src="/images/suits.png" alt="">
+                </li>
+            </div>
+        </ul>
     </div>
     <div class="container">
         <section id="comingSoon">
             <img src="/images/newMusic.jpg" alt="">
-            <!-- <img id="bgNewMusic" src="/images/bgForNewMusic.png" alt=""> -->
         </section>
-        <h3>Latest Releases</h3> 
-        <section class="latestReleases" id="latest">
-            <div class="songBox">box 1 <img src="" alt=""></div>
-            <div class="songBox">box 2 <img src="" alt=""></div>
-            <div class="songBox">box 3 <img src="" alt=""></div>
-            <div class="songBox">box 4 <img src="" alt=""></div>
-        </section>
+        <div class="latestReleasesContainer">
+
+            <h3 class="centerText">Latest Releases</h3>
+            <section class="latestReleases" id="latest">
+                <div class="songBox"> Olivia Rodrigo <img class="smallImgCard biggerCard" src="/images/Olivia.jpg" alt="">
+                    <h3>drivers license</h3>
+                    <img src="images/meatballmenu.png" alt="" class="meatBallMenu">
+                </div>
+                <div class="songBox">Olivia Rodrigo <img class="smallImgCard biggerCard" src="/images/Olivia.jpg" alt="">
+                    <h3>good for u</h3>
+                    <img src="images/meatballmenu.png" alt="" class="meatBallMenu">
+
+                </div>
+                <div class="songBox">Olivia Rodrigo <img class="smallImgCard biggerCard" src="/images/Olivia.jpg" alt="">
+                    <h3>deja vu</h3>
+                    <img src="images/meatballmenu.png" alt="" class="meatBallMenu">
+
+                </div>
+                <div class="songBox">Olivia Rodrigo <img class="smallImgCard biggerCard" src="/images/Olivia.jpg" alt="">
+                    <h3>favorite crime</h3>
+                    <img src="images/meatballmenu.png" alt="" class="meatBallMenu">
+
+                </div>
+            </section>
+            <section class="genrebanner">
+                <div class="banner" id="banner1">
+                    <h3 class="middle black">Party</h3>
+                </div>
+                <div class="banner" id="banner2">
+                    <h3 class="middle black">Road Trip</h3>
+                </div>
+                <div class="banner" id="banner3">
+                    <h3 class="middle black">Electronic</h3>
+                </div>
+            </section>
+        </div>
+        <h3 class="centerText"> Popular Artists </h3>
     </div>
     <aside id="queueList">
-       <h2>Queue</h2>
-       <h4>Queue &downarrow;</h4>
-       <section class="songsInQueue" id="queueSongs">
+        <h2>Queue</h2>
+        <h4>Queue &downarrow;</h4>
+        <section class="songsInQueue" id="queueSongs">
 
-        <div class="playListCard">
-            <span class="songNumber">01</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Eastside</span>
-            <div class="singerName">Belly Blanko</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">02</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Believer</span>
-            <div class="singerName">Imagine Dragon</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">03</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Fair Trade</span>
-            <div class="singerName">Drake</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">04</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Stay</span>
-            <div class="singerName">Justin Bieber</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">05</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Hurricane</span>
-            <div class="singerName">Kanye West</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">06</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Praise God</span>
-            <div class="singerName">Kanye West</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">07</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Ranjha</span>
-            <div class="singerName">Jasline Royal</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">08</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Param Sundari</span>
-            <div class="singerName">A.R Rahman</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">09</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">Insane</span>
-            <div class="singerName">AP Dhillon</div>
-        </div>
-        <div class="playListCard">
-            <span class="songNumber">10</span>
-            <img src="/images/Olivia.png" alt="">
-            <span class="songName">good 4 u</span>
-            <div class="singerName">Olivia Rodrigo</div>
-        </div>
+            <div class="playListCard">
+                <span class="songNumber">01</span>
+                <img class="smallImgCard " src="/images/Olivia.png" alt="">
+                <span class="songName">Eastside</span>
+                <div class="singerName">Belly Blanko</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">02</span>
+                <img class="smallImgCard " src="/images/ID.jpg" alt="">
+                <span class="songName">Believer</span>
+                <div class="singerName">Imagine Dragon</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">03</span>
+                <img class="smallImgCard " src="/images/Drake.jpg" alt="">
+                <span class="songName">Fair Trade</span>
+                <div class="singerName">Drake</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">04</span>
+                <img class="smallImgCard " src="/images/justin.jpg" alt="">
+                <span class="songName">Stay</span>
+                <div class="singerName">Justin Bieber</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">05</span>
+                <img class="smallImgCard " src="/images/Kanye.jpg" alt="">
+                <span class="songName">Hurricane</span>
+                <div class="singerName">Kanye West</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">06</span>
+                <img class="smallImgCard " src="/images/Kanye.jpg" alt="">
+                <span class="songName">Praise God</span>
+                <div class="singerName">Kanye West</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">07</span>
+                <img class="smallImgCard " src="/images/jasleen.jpg" alt="">
+                <span class="songName">Ranjha</span>
+                <div class="singerName">Jasline Royal</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">08</span>
+                <img class="smallImgCard " src="/images/AR.jpg" alt="">
+                <span class="songName">Param Sundari</span>
+                <div class="singerName">A.R Rahman</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">09</span>
+                <img class="smallImgCard " src="/images/Olivia.png" alt="">
+                <span class="songName">Insane</span>
+                <div class="singerName">AP Dhillon</div>
+            </div>
+            <div class="playListCard">
+                <span class="songNumber">10</span>
+                <img class="smallImgCard " src="/images/Olivia.jpg" alt="">
+                <span class="songName">good 4 u</span>
+                <div class="singerName">Olivia Rodrigo</div>
+            </div>
 
-       </section>
+        </section>
     </aside>
-
+    <footer class="foot">
+        <audio controls>
+            <source src="assets/audio [Copyright Free].mp3" type="audio/mp3">
+            </source>
+        </audio>
+    </footer>
 
 </body>
+
 </html>

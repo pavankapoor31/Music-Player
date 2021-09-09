@@ -2,7 +2,7 @@
     --blue-bg-colour: rgb(12, 16, 39);
     --lightBlue: rgb(19, 26, 66);
     --white-Font: rgb(255, 255, 255);
-    --paleWhite-Font: rgb(180, 199, 127);
+    --paleWhite-Font: rgb(242, 247, 226);
     color: white;
 }
 
@@ -138,6 +138,7 @@ body {
     /* display: flex; */
     align-items: flex-start;
     padding: 0.5rem;
+    text-decoration: none;
 }
 
 .smallImgCard {
@@ -285,6 +286,12 @@ body {
 
 
 /*Utility classes*/
+
+.pretty {
+    color: var(--paleWhite-Font);
+    text-decoration: none;
+    /*uses for a links */
+}
 
 .centerText {
     text-align: center;
